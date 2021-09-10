@@ -21,4 +21,13 @@ this.getTodo()
       console.log('⚠ GET_TODO', error)
     }
   }
+
+  async markedComplete(id){
+    try {
+      await todoService.markedComplete(id)
+    } catch (error) {
+      console.log('⚠ MARKED_COMPLETE', error)
+      
+    }
+  }
 }

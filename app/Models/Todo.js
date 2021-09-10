@@ -11,8 +11,8 @@ export class Todo{
   get Template(){
     return /*html*/ `
     <form>
-      <input type="checkbox" id="${this.id}" name="${this.id}" value="${this.completed}">
-      <label for="${this.id}"> ${this.description}</label><br>
+      <input type="checkbox" id="${this.id}" name="checkbox" onclick="app.todoController.markedComplete('${this.id}')">
+      <label for="checkbox"> ${this.description}</label><br>
     </form>
     `
   }
