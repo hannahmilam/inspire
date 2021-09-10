@@ -1,0 +1,19 @@
+/* BASIC STYLES HERE */
+body{
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+.bg-img{
+  background-size: cover;
+}
+
+.card{
+  background-color: rgba(128, 128, 128, 0.425);
+  box-shadow: 0, 0, 5, 0, rgb(173, 173, 235);
+  color: white;
+
+}
+
+#clock-div{
+  position: center;
+}
