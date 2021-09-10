@@ -22,4 +22,8 @@ export class QuoteController{
   showAuthor(){
     document.getElementById('author').classList.remove('visually-hidden')
   }
+
+  hideAuthor(){
+    document.getElementById('author').classList.add('visually-hidden')
+  }
 }

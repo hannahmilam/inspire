@@ -17,3 +17,7 @@ body{
 #clock-div{
   position: center;
 }
+
+#author{
+  transition-timing-function: linear;
+}
