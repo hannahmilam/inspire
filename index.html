@@ -20,10 +20,11 @@
 
   <main>
     <div class="container-fluid">
+      <!-- weather -->
       <div class="row">
         <div class="col-3" id="weather"></div>
       </div>
-
+      <!-- clock -->
       <div class="row d-flex justify-content-center">
         <div class="col-4">
           <div class="card text-center py-3">
@@ -32,11 +33,32 @@
           </div>
         </div>
       </div>
+      <!-- todo list -->
+      <div class="row">
+        <div class="col-4 offset-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Todo:</h5>
+            </div>
 
-      <div class="row fixed-bottom">
-        <div class="col-2" id="img-text"></div>
+            <div class="card-body" id="todo">
+              <!-- TODO LIST GOES HERE -->
+            </div>
+            <div class="card-footer">
+              <form onsubmit="app.todoController.addTasks(id)">
+                <input name="task" type="text" class="rounded" style="width: 200px;" minlength="3" maxlength="15"
+                  required placeholder="Add Task..">
 
-        <div class="col-8" id="quotes"></div>
+                <button class="btn btn-secondary" type="submit">+</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- quotes -->
+      <div class="row">
+        <!-- <div class="col-2" id="img-text"></div> -->
+        <div class="col-8 offset-2" id="quotes"></div>
       </div>
     </div>
 

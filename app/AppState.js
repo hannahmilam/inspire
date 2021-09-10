@@ -11,6 +11,9 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Quote.js').Quote} */
   quotes = null
 
+   /** @type {import('./Models/Todo.js').Todo[]} */
+   
+   tasks = []
 
 }
 
