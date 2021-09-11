@@ -22,24 +22,23 @@
 
   <main id="img" class="bg-img">
     <div class="container-fluid">
-      <!-- weather -->
-      <div class="row">
-        <div class="col-md-2" id="weather"></div>
-      </div>
-      <!-- clock -->
-      <div class="row">
-        <div class="col-md-5 offset-2">
-          <div class="card text-center p-5">
-            <h1 id="clock" class="visually-hidden selectable" onclick="app.clockController.toggleClocks()"></h1>
-            <h1 id='twelve-hour-clock' class='selectable' onclick="app.clockController.toggleClocks()">
+
+      <div class="row py-5">
+        <!-- clock -->
+        <div class="col-md-5">
+          <div class="card text-center py-3">
+            <h1 id="clock" class="visually-hidden selectable clock" onclick="app.clockController.toggleClocks()"></h1>
+            <h1 id='twelve-hour-clock' class='selectable clock' onclick="app.clockController.toggleClocks()">
             </h1>
             <h3><span id="greeting"></span>, Hannah</h3>
           </div>
         </div>
+        <!-- weather -->
+        <div class="col-md-2 offset-5" id="weather"></div>
       </div>
       <!-- todo list -->
-      <div class="row mt-5">
-        <div class="col-md-3 offset-9">
+      <div class="row my-3">
+        <div class="col-md-2 offset-10">
           <div class="card">
             <div class="card-header">
               <h5>Todo:</h5>
@@ -54,9 +53,9 @@
               <div class="input-group">
                 <form onsubmit="app.todoController.addTask()">
                   <label for="description" class=""></label>
-                  <input name="description" id="description" type="text" class="" minlength="3" maxlength="15" required
-                    placeholder="Add Task..">
-                  <button class="btn btn-secondary" type="submit">+</button>
+                  <input name="description" id="description" type="text" class="form-control" width="100px"
+                    minlength="3" maxlength="15" required placeholder="Add Task..">
+                  <button class="btn btn-secondary mt-2" type="submit">+</button>
                 </form>
               </div>
             </div>
@@ -66,7 +65,7 @@
 
       <!-- quotes -->
       <div class=" row">
-        <div class="col-md-8 offset-2 mt-5" id="quotes"></div>
+        <div class="col-md-10 offset-1 my-3" id="quotes"></div>
       </div>
     </div>
 

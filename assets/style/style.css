@@ -24,3 +24,7 @@ body{
 .visually-hidden{
   transition-timing-function: linear;
 }
+
+.clock{
+  font-size: 100px;
+}

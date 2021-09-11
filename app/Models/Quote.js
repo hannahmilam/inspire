@@ -8,7 +8,7 @@ export class Quote{
 
   get Template(){
     return /*html*/`
-    <div class="card text-center my-3">
+    <div class="card text-center">
     <div class="card-body">  
     <h3 
     onmouseover="app.quoteController.showAuthor()" onmouseout="app.quoteController.hideAuthor()">${this.content}</h3>
