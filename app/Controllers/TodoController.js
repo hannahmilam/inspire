@@ -5,6 +5,8 @@ function _drawTodo(){
   let template = ""
  ProxyState.tasks.forEach(t => template += t.Template)
   document.getElementById('todo').innerHTML = template
+  let remainingTotal = ProxyState.tasks.filter(t => t.completed)
+  document.getElementById('count').innerHTML = `${remainingTotal.length} / ${ProxyState.tasks.length}`
 }
 
 export class TodoController{ 
@@ -67,8 +69,6 @@ export class TodoController{
   }    
   }
       
-
-
   async markedComplete(id){
     try {
       await todoService.markedComplete(id)

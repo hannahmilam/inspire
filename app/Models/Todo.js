@@ -1,3 +1,5 @@
+import { ProxyState } from "../AppState.js"
+
 export class Todo{
   constructor(todoData){
     this.completed = todoData.completed
