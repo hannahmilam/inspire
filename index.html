@@ -30,7 +30,9 @@
       <div class="row d-flex justify-content-center">
         <div class="col-md-4">
           <div class="card text-center py-3">
-            <h1 id="clock"></h1>
+            <h1 id="clock" class="visually-hidden selectable" onclick="app.clockController.toggleClocks()"></h1>
+            <h1 id='twelve-hour-clock' class='selectable' onclick="app.clockController.toggleClocks()">
+            </h1>
             <h3><span id="greeting"></span>, Hannah</h3>
           </div>
         </div>
