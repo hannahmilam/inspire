@@ -24,3 +24,9 @@ body{
 .visually-hidden{
   transition-timing-function: linear;
 }
+
+.clock{
+  position: absolute;
+  left: 200px;
+  bottom: 250px;
+}
