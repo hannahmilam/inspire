@@ -11,7 +11,7 @@ this.query = imgData.query
 
 get Template(){
   return /*html*/ `
-  <div class="card text-center mt-4 ms-3">
+  <div class="card text-center my-3 ms-1">
   <div class="card-body">
   <h5>Author: ${this.author}</h5>
   <p>Title: ${this.query}</p>

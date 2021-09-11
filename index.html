@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>inspire</title>
@@ -22,11 +24,11 @@
     <div class="container-fluid">
       <!-- weather -->
       <div class="row">
-        <div class="col-3" id="weather"></div>
+        <div class="col-md-3" id="weather"></div>
       </div>
       <!-- clock -->
       <div class="row d-flex justify-content-center">
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="card text-center py-3">
             <h1 id="clock"></h1>
             <h3>Good Morning, Hannah</h3>
@@ -35,7 +37,7 @@
       </div>
       <!-- todo list -->
       <div class="row">
-        <div class="col-4 offset-8">
+        <div class="col-md-4 offset-8">
           <div class="card">
             <div class="card-header">
               <h5>Todo:</h5>
@@ -44,21 +46,25 @@
             <div class="card-body" id="todo">
               <!-- TODO LIST GOES HERE -->
             </div>
-            <div class="card-footer">
-              <form onsubmit="app.todoController.addTasks(id)">
-                <input name="task" type="text" class="rounded" style="width: 200px;" minlength="3" maxlength="15"
-                  required placeholder="Add Task..">
 
-                <button class="btn btn-secondary" type="submit">+</button>
-              </form>
+            <div class="card-footer">
+              <div class="input-group">
+                <form onsubmit="app.todoController.addTask()">
+                  <label for="description" class=""></label>
+                  <input name="description" id="description" type="text" class="" minlength="3" maxlength="15" required
+                    placeholder="Add Task..">
+                  <button class="btn btn-secondary" type="submit">+</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- quotes -->
-      <div class="row">
-        <div class="col-2" id="img-text"></div>
-        <div class="col-8 offset-2" id="quotes"></div>
+      <div class=" row">
+        <div class="col-md-2" id="img-text"></div>
+        <div class="col-md-8" id="quotes"></div>
       </div>
     </div>
 
@@ -69,7 +75,7 @@
       <p><small>Made with 💖 by Codeworks</small></p>
     </div>
   </footer> -->
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
     integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
