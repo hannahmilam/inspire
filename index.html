@@ -18,18 +18,18 @@
   <title>inspire</title>
 </head>
 
-<body id="img">
+<body id="img" class="bg-img">
 
   <main>
     <div class="container-fluid">
       <!-- weather -->
       <div class="row">
-        <div class="col-md-3" id="weather"></div>
+        <div class="col-md-2" id="weather"></div>
       </div>
       <!-- clock -->
       <div class="row d-flex justify-content-center">
         <div class="col-md-4">
-          <div class="card text-center py-3">
+          <div class="card text-center py-5">
             <h1 id="clock" class="visually-hidden selectable" onclick="app.clockController.toggleClocks()"></h1>
             <h1 id='twelve-hour-clock' class='selectable' onclick="app.clockController.toggleClocks()">
             </h1>
@@ -64,10 +64,9 @@
         </div>
       </div>
 
-      <!-- quotes & image info-->
+      <!-- quotes -->
       <div class=" row">
-        <div class="col-md-2" id="img-text"></div>
-        <div class="col-md-8" id="quotes"></div>
+        <div class="col-md-8 offset-2" id="quotes"></div>
       </div>
     </div>
 

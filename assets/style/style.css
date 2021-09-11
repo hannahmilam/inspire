@@ -1,6 +1,7 @@
 /* BASIC STYLES HERE */
 body{
   font-family: 'Kaisei Tokumin', serif;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .bg-img{
@@ -9,16 +10,17 @@ body{
 }
 
 .card{
-  background-color: rgba(128, 128, 128, 0.425);
-  box-shadow: 0, 0, 5, 0, rgb(173, 173, 235);
+  background-color: rgba(255, 255, 255, 0.178);
   color: white;
-
+  border-radius: 25px;
+  box-shadow: 0px 0px 12px #faf19ec4;
+  backdrop-filter: blur(4px);
 }
 
 #clock-div{
   position: center;
 }
 
-#author{
+.visually-hidden{
   transition-timing-function: linear;
 }

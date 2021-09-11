@@ -10,11 +10,11 @@ this.name = weatherData.name
 
   get Template(){
     return /*html*/ `
-    <div class="card text-light px-2 py-3 text-center my-3">
-    <h3 class="selectable visually-hidden" id="f" onclick="app.weatherController.toggleWeather()">Fahrenheit: ${this.f}&#8457;</h3>
-    <h3 class="visually-hidden selectable" id="c" onclick="app.weatherController.toggleWeather()">Celsius: ${this.c}&#8451;</h3>
+    <div class="card text-light px-2 py-3 my-3">
+    <h5 class="selectable visually-hidden" id="f" onclick="app.weatherController.toggleWeather()">${this.f}&#8457;</h5>
+    <h5 class="visually-hidden selectable" id="c" onclick="app.weatherController.toggleWeather()"> ${this.c}&#8451;</h5>
     <h5>${this.Weather}</h5>
-    <h5>${this.name} </h5>
+    <h5>${this.name}, Idaho</h5>
     </div>
     `
   }
