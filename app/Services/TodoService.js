@@ -7,6 +7,9 @@ const todoApi = axios.create({
 })
 
 class TodoService{
+  constructor(){
+    this.getTodo()
+  }
   async getTodo() {
     let res = await todoApi.get()
     ProxyState.tasks = res.data.map(t => new Todo(t))
@@ -20,10 +23,10 @@ class TodoService{
     ProxyState.tasks = ProxyState.tasks.filter(t => t.id !== id)
   }
   async markedComplete(id) {
-    const task = ProxyState.tasks.find(t => t.id == id)
+    const task = ProxyState.tasks.find(t => t.id === id)
     task.completed = !task.completed
     await todoApi.put(`${id}`, task)
-    console.log('from markedComplete', task.completed)
+    this.getTodo()
   }
 }
 

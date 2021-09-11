@@ -5,8 +5,9 @@ function _drawTodo(){
   let template = ""
  ProxyState.tasks.forEach(t => template += t.Template)
   document.getElementById('todo').innerHTML = template
-  let remainingTotal = ProxyState.tasks.filter(t => t.completed)
-  document.getElementById('count').innerHTML = `${remainingTotal.length} / ${ProxyState.tasks.length}`
+
+  let remaining = ProxyState.tasks.filter(t => t.completed)
+  document.getElementById('count').innerHTML = `${remaining.length} / ${ProxyState.tasks.length}`
 }
 
 export class TodoController{ 
