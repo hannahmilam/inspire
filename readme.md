@@ -1,20 +1,2 @@
-inspire
-============
-
-### Get Started
-
-```terminal
-> npm i
-> npm run sass
-> npm run serve
-```
-
-### AuthConfig
-
-Fill in your AuthConfig with keys from [Auth0](https://auth0.com/)
-
-```javascript
-export const domain = '' 
-export const clientId = '' 
-export const audience = '' 
-```
+## Inspiration can be difficult to achieve. 
+# Keep track of your many important tasks and the weather with the subtle help of a random daily quote and beautiful scenery.
