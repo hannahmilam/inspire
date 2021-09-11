@@ -1,5 +1,3 @@
-import { ProxyState } from "../AppState.js";
-
   function _drawClock(){
     const today = new Date()
     let h = today.getHours()
