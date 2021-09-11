@@ -22,7 +22,7 @@ this.name = weatherData.name
   get Weather(){
     let template = ''
     let elemWeather = this.weather
-    elemWeather.forEach(w => template += `<span>${w.description} <img src="https://openweathermap.org/img/wn/${w.icon}.png" alt="weather icon"></span>`)
+    elemWeather.forEach(w => template += `<span>${w.description}</span>`)
     return template
 
   }
